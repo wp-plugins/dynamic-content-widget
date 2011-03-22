@@ -21,6 +21,8 @@ content, in a local loop, according to your selected template. Very handy for th
 Very simple, but also very powerful and versatile. Also may be difficult to use for people who are not into template 
 hacking, so if you're not used to php or html, this widget probably isn’t for you.
 
+Go to http://dikhoffsoftware.com/dynamic-content-widget/ for instructions and screenshots.
+
 == Installation ==
 
 1. Go to http://dikhoffsoftware.com/dynamic-content-widget/#instructions for instructions
