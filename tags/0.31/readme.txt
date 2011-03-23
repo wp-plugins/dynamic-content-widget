@@ -19,13 +19,15 @@ content, in a local loop, according to your selected template. Very handy for th
 *	Many more uses.
 
 Very simple, but also very powerful and versatile. Also may be difficult to use for people who are not into template 
-hacking, so if you're not used to php or html, this widget probably isn’t for you.
+hacking, so if you're not used to php or html, this widget probably isn't for you.
 
 Go to http://dikhoffsoftware.com/dynamic-content-widget/ for instructions and screenshots.
 
 == Installation ==
 
-1. Go to http://dikhoffsoftware.com/dynamic-content-widget/#instructions for instructions
+1. Upload `dynamic-content-widget.[version].zip` to the `/wp-content/plugins/` directory and unzip
+1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Go to http://dikhoffsoftware.com/dynamic-content-widget/#instructions for further instructions
 
 == Frequently Asked Questions ==
 
@@ -35,9 +37,10 @@ This is a plugin that's meant for advanced users, so probably not, unless you wa
 
 == Screenshots ==
 
-1. This is what you'll see when you use the widget. Title is the same as other widgets, I usually leave it 
+1. This is what you'll see when you place the widget. Title is the same as other widgets, I usually leave it 
 empty. Slug or id is the identifier of the page or post you want your template applied to. The slug is the last part 
-of the url of the page or post. dcwss.jpg.
+of the url of the page or post. Subtemplate is the template you have created according to the instructions
+available on http://dikhoffsoftware.com/dynamic-content-widget/#instructions .
 
 == Changelog ==
 
