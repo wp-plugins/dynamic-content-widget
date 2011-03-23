@@ -3,7 +3,7 @@
  * Plugin Name: Dynamic Content Widget
  * Plugin URI: http://dikhoffsoftware.com/dynamic-content-widget
  * Description: A widget that can render a post or a page, using a template in your theme.
- * Version: 0.2
+ * Version: 0.31
  * Author: Dikhoff Software
  * Author URI: http://dikhoffsoftware.com
  *
