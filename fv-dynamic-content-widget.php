@@ -106,20 +106,22 @@ class fv_Dynamic_Content_Widget extends WP_Widget {
 		                   'subtemplate' => ''
 		                   );
 		$instance = wp_parse_args( (array) $instance, $defaults );
-		 ?>
-<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'hybrid'); ?></label>
-<input id="<?php echo $this->get_field_id( 'title' ); ?>"
-	name="<?php echo $this->get_field_name( 'title' ); ?>"
-	value="<?php echo $instance['title']; ?>" style="width: 100%;" /></p>
+?>
+<p>
+	<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'hybrid'); ?></label>
+	<input id="<?php echo $this->get_field_id( 'title' ); ?>"
+		name="<?php echo $this->get_field_name( 'title' ); ?>"
+		value="<?php echo $instance['title']; ?>" style="width: 100%;" />
+</p>
 
-<p><label for="<?php echo $this->get_field_id( 'slug' ); ?>"><?php _e('Slug or id:', 'slug'); ?></label>
-<input id="<?php echo $this->get_field_id( 'slug' ); ?>"
-	name="<?php echo $this->get_field_name( 'slug' ); ?>"
-	value="<?php echo $instance['slug']; ?>" style="width: 100%;" /></p>
-
-		<?php fv_write_subtemplates($this, $instance) ?>
-
-<?php
+<p>
+	<label for="<?php echo $this->get_field_id( 'slug' ); ?>"><?php _e('Slug or id:', 'slug'); ?></label>
+	<input id="<?php echo $this->get_field_id( 'slug' ); ?>"
+		name="<?php echo $this->get_field_name( 'slug' ); ?>"
+		value="<?php echo $instance['slug']; ?>" style="width: 100%;" />
+</p>
+<?php 
+		fv_write_subtemplates($this, $instance);
 	}
 }
 ?>
