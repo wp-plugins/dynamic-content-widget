@@ -4,11 +4,13 @@ Donate link: http://unicef.com/
 Tags: widget, dynamic content, homepage, pinning, sticky, sticky a page, pinning a page, sticky pages, pinning pages, dynamic
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 0.31
+Stable tag: 0.32
 
 With this widget, you can enter a slug or id, select a template you created, and it will render the content according to your selected template.
 
 == Description ==
+
+= Due to a merge error, versions before 0.3 and 0.31 suffered from a fatal bug that broke it. Please try again with version 0.32 =
 
 With this WordPress widget, you can enter a slug or id, select a template part, and the widget will render the 
 content, in a local loop, according to your selected template. Very handy for things like:
@@ -46,8 +48,14 @@ available on http://dikhoffsoftware.com/dynamic-content-widget/#instructions .
 
 = 0.3 =
 First version
+= 0.31 =
+Fixed content for wordpress.org
+= 0.32 =
+Fixed fatal widget-breaking bug
 
 == Upgrade Notice ==
 
 = 0.3 =
 First version
+= 0.32 =
+Fixed fatal widget-breaking bug
