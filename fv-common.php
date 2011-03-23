@@ -87,7 +87,7 @@ function fv_get_subtemplates() {
 
 
 function fv_write_subtemplates($widget, $instance) {
-	$subtemplates = get_subtemplates();
+	$subtemplates = fv_get_subtemplates();
 ?>
 <p>
 <label for="<?php echo $widget->get_field_id( 'subtemplate' ); ?>"><?php _e('Subtemplate:', 'subtemplate'); ?></label>
