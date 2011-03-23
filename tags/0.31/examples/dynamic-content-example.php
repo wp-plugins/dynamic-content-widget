@@ -8,18 +8,18 @@
  * 
 */
 ?>
-	<strong class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></strong>
-	<span class="text">
-		<?php the_content(); ?>
-	</span>
-	<?php 
-	  if ($post->post_type == 'page') {
-	?>
-	<span class="category">Page</span>
-	<?php 
-	  } else {
-	?>
-	<span class="category">Blog</span>
-	<?php 
-	  }
-	?>
+<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+<p>
+	<?php the_content(); ?>
+</p>
+<?php 
+	if ($post->post_type == 'page') {
+?>
+<span class="category">Page</span>
+<?php 
+	} else {
+?>
+<span class="category">Blog</span>
+<?php 
+	}
+?>

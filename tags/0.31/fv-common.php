@@ -1,6 +1,6 @@
 <?php
 /*
- * Common functions for Subtemplate
+ * Common functions for dynamic content widget
  * @since 0.1
  * 
  * Copyright (C) 2011  Dikhoff Software
