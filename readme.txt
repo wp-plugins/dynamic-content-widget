@@ -4,7 +4,7 @@ Donate link: http://unicef.com/
 Tags: widget, dynamic content, homepage, pinning, sticky, sticky a page, pinning a page, sticky pages, pinning pages, dynamic
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 0.4
+Stable tag: 0.4.1
 
 A Swiss Army Knife for Wordpress developers. Enter a slug or id, select a template you created, and it will render the content with your template.
 

@@ -3,7 +3,7 @@
  * Plugin Name: Dynamic Content Widget
  * Plugin URI: http://dikhoffsoftware.com/dynamic-content-widget/
  * Description: A Swiss Army Knife for Wordpress developers. Enter a slug or id, select a template you created, and it will render the content with your template.
- * Version: 0.4
+ * Version: 0.4.1
  * Author: Dikhoff Software
  * Author URI: http://dikhoffsoftware.com
  *
