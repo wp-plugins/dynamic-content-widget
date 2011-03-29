@@ -1,7 +1,7 @@
 === Dynamic Content Widget ===
 Contributors: DikhoffSoftware
 Donate link: http://unicef.com/
-Tags: widget, dynamic content, homepage, pinning, sticky, sticky a page, pinning a page, sticky pages, pinning pages, dynamic
+Tags: generic, simple, rendering content, widget, dynamic content, homepage, pinning, sticky, sticky a page, pinning a page, sticky pages, pinning pages, dynamic, professional, advanced
 Requires at least: 3.0
 Tested up to: 3.1
 Stable tag: 0.32
@@ -10,9 +10,7 @@ With this widget, you can enter a slug or id, select a template you created, and
 
 == Description ==
 
-= Due to a merge error, versions 0.3 and 0.31 suffered from a fatal bug that broke it. Please try again with version 0.32 =
-
-With this WordPress widget, you can enter a slug or id, select a template part, and the widget will render the 
+With this widget, you can enter a slug or id, select a template part, and the widget will render the 
 content, in a local loop, according to your selected template. Very handy for things like:
 
 *	Pinning content (pages and posts) to the homepage. 
@@ -52,6 +50,8 @@ First version
 Fixed content for wordpress.org
 = 0.32 =
 Fixed fatal widget-breaking bug
+= 0.4 =
+AJAX check to see if the slug matches the content
 
 == Upgrade Notice ==
 
@@ -59,3 +59,5 @@ Fixed fatal widget-breaking bug
 First version
 = 0.32 =
 Fixed fatal widget-breaking bug
+= 0.4 =
+AJAX check to see if the slug matches the content

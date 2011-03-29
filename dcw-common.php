@@ -22,7 +22,7 @@
  */
 
 
-function fv_get_ID_by_slug($page_slug) {
+function dcw_get_ID_by_slug($page_slug) {
 	global $wpdb;
 	$querystr = "SELECT wposts.*
 		FROM $wpdb->posts wposts
@@ -42,7 +42,7 @@ function fv_get_ID_by_slug($page_slug) {
 	}
 }
 
-function fv_get_subtemplate_description( $file ) {
+function dcw_get_subtemplate_description( $file ) {
 	global $st_file_descriptions;
 
 	if ( isset( $st_file_descriptions[basename( $file )] ) ) {
@@ -58,17 +58,17 @@ function fv_get_subtemplate_description( $file ) {
 	return null;
 }
 
-function fv_get_template_sysname($file) {
+function dcw_get_template_sysname($file) {
 	$bname = basename($file);
 	$parts = split("\.", $bname);
 	return $parts[0];	
 }
 
 
-function fv_get_subtemplates() {
-	global $fv_subtemplates;
-	if (isset($fv_subtemplates)) {
-		return $fv_subtemplates;
+function dcw_get_subtemplates() {
+	global $dcw_subtemplates;
+	if (isset($dcw_subtemplates)) {
+		return $dcw_subtemplates;
 	}
 	
 	$st_subtemplates = Array();
@@ -77,37 +77,69 @@ function fv_get_subtemplates() {
 	$theme = get_current_theme();
 
 	foreach ( $themes[$theme]['Template Files'] as $template_file ) {
-		$desc = fv_get_subtemplate_description($template_file);
+		$desc = dcw_get_subtemplate_description($template_file);
 		if ($desc) {		
-		    $st_subtemplates[fv_get_template_sysname($template_file)] = $desc;
+		    $st_subtemplates[dcw_get_template_sysname($template_file)] = $desc;
 		}
 	} 
 	return $st_subtemplates;
 }
 
 
-function fv_write_subtemplates($widget, $instance) {
-	$subtemplates = fv_get_subtemplates();
+function dcw_write_subtemplates($widget, $instance) {
+	$subtemplates = dcw_get_subtemplates();
 ?>
 <p>
 <label for="<?php echo $widget->get_field_id( 'subtemplate' ); ?>"><?php _e('Subtemplate:', 'subtemplate'); ?></label>
 	<select id="<?php echo $widget->get_field_id( 'subtemplate' ); ?>" name="<?php echo $widget->get_field_name( 'subtemplate' ); ?>">
 		<option value="">None</option>
 <?php 	
-	foreach ( $subtemplates as $file => $desc ) {
-		$sel = "";
-		if ($instance['subtemplate'] == $file) { 
-			$sel = ' selected="selected"';
-		} else {
+		foreach ( $subtemplates as $file => $desc ) {
 			$sel = '';
+			if ($instance['subtemplate'] == $file) { 
+				$sel = ' selected="selected"';
+			}
+			echo '<option value="'. $file .'"' . $sel . ' >' . $desc . '</option>';
 		}
-		echo '<option value="'. $file .'"' . $sel . ' >' . $desc . '</option>';
-	}
 ?> 
 	</select>
 	</strong><a target="_blank" href="http://dikhoffsoftware.com/dynamic-content-widget/#instructions"><b>?</b></a>
 </p>
-<?php 
+<?php
+}
+	
+
+function _dcw_find_content_id($field, $q) {
+	global $wpdb;
+
+	$dbquery = $wpdb->prepare("
+			SELECT ID, post_title, post_name FROM $wpdb->posts
+			WHERE post_status = 'publish' 
+			AND post_type NOT IN ('nav_menu_item', 'revision')
+			AND $field = '%s'", $q);
+	
+	$results = $wpdb->get_results($dbquery);
+	return $results;
+}
+
+function dcw_find_content_id($q) {
+	$parts = split(':', $q);
+	if (is_numeric($parts[0])) {
+		$results = _dcw_find_content_id("ID", $parts[0]);
+		if (sizeof($results) > 0) {
+			return $results;
+		}
+	}
+	
+	$results = _dcw_find_content_id("post_title", $q);
+	if (sizeof($results) > 0) {
+		return $results;
+	}
+	
+	$results = _dcw_find_content_id("post_name", $q);
+	if (sizeof($results) > 0) {
+		return $results;
+	}	
 }
 
 

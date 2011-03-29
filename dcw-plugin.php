@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Dynamic Content Widget
- * Plugin URI: http://dikhoffsoftware.com/dynamic-content-widget
- * Description: A widget that can render a post or a page, using a template in your theme.
- * Version: 0.32
+ * Plugin URI: http://dikhoffsoftware.com/dynamic-content-widget/
+ * Description: A Swiss Army Knife for Wordpress developers. Enter a slug or id, select a template you created, and it will render the content with your template.
+ * Version: 0.4
  * Author: Dikhoff Software
  * Author URI: http://dikhoffsoftware.com
  *
@@ -25,20 +25,6 @@
  * 
  */
 
-require_once("fv-dynamic-content-widget.php");
-
-/**
- * Add the action.
- * @since 0.1
- */
-add_action( 'widgets_init', 'fv_load_widgets' );
-
-/**
- * Register widgets.
- * @since 0.1
- */
-function fv_load_widgets() {
-	register_widget( 'fv_Dynamic_Content_Widget' );
-}
+require_once("dcw-dynamic-content-widget.php");
 
 ?>
