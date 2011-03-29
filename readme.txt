@@ -1,17 +1,18 @@
 === Dynamic Content Widget ===
 Contributors: DikhoffSoftware
 Donate link: http://unicef.com/
-Tags: generic, simple, rendering content, widget, dynamic content, homepage, pinning, sticky, sticky a page, pinning a page, sticky pages, pinning pages, dynamic, professional, advanced
+Tags: widget, dynamic content, homepage, pinning, sticky, sticky a page, pinning a page, sticky pages, pinning pages, dynamic
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 0.32
+Stable tag: 0.4
 
-With this widget, you can enter a slug or id, select a template you created, and it will render the content according to your selected template.
+A Swiss Army Knife for Wordpress developers. Enter a slug or id, select a template you created, and it will render the content with your template.
 
 == Description ==
 
-With this widget, you can enter a slug or id, select a template part, and the widget will render the 
-content, in a local loop, according to your selected template. Very handy for things like:
+A Swiss Army Knife for Wordpress developers. With this WordPress widget, you can enter a slug or id, select a 
+template you created, and the widget will render the content, in a local loop, according to your selected template. 
+Very handy for things like:
 
 *	Pinning content (pages and posts) to the homepage. 
 *	Rendering arbitrary content (pages and posts) in a sidebar or other widget area.
@@ -21,13 +22,20 @@ content, in a local loop, according to your selected template. Very handy for th
 Very simple, but also very powerful and versatile. Also may be difficult to use for people who are not into template 
 hacking, so if you're not used to php or html, this widget probably isn't for you.
 
-Go to http://dikhoffsoftware.com/dynamic-content-widget/ for instructions and screenshots.
+Version 0.4 comes with automatic slug checking. Enter a slug, and the widget will check if the slug is valid.
+
+Learn how to use this widget by reading these use cases:
+
+*	[Pinning content to the homepage](http://dikhoffsoftware.com/dynamic-content-widget/use-case-pinning/ "Pinning content to the homepage")
+*	[Custom Featured Content Gallery](http://dikhoffsoftware.com/dynamic-content-widget/use-case-gallery/ "Custom Featured Content Gallery")
+
+Go to [the homepage](http://dikhoffsoftware.com/dynamic-content-widget/ "Dynamic Content Widget homepage") for instructions and screenshots.
 
 == Installation ==
 
-1. Upload `dynamic-content-widget.[version].zip` to the `/wp-content/plugins/` directory and unzip
+1. Upload `dynamic-content-widget.0.4.zip` to the `/wp-content/plugins/` directory and unzip
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to http://dikhoffsoftware.com/dynamic-content-widget/#instructions for further instructions
+1. For further instructions, go to the [instructions page](http://dikhoffsoftware.com/dynamic-content-widget/ "Dynamic Content Widget instructions").
 
 == Frequently Asked Questions ==
 
@@ -40,7 +48,8 @@ This is a plugin that's meant for advanced users, so probably not, unless you wa
 1. This is what you'll see when you place the widget. Title is the same as other widgets, I usually leave it 
 empty. Slug or id is the identifier of the page or post you want your template applied to. The slug is the last part 
 of the url of the page or post. Subtemplate is the template you have created according to the instructions
-available on http://dikhoffsoftware.com/dynamic-content-widget/#instructions .
+available on the [instructions page](http://dikhoffsoftware.com/dynamic-content-widget/ "Dynamic Content Widget instructions").
+2. Since version 0.4, the widget will detect if you've entered a slug that doesn't exist.
 
 == Changelog ==
 
@@ -51,7 +60,7 @@ Fixed content for wordpress.org
 = 0.32 =
 Fixed fatal widget-breaking bug
 = 0.4 =
-AJAX check to see if the slug matches the content
+Added automatic slug checking
 
 == Upgrade Notice ==
 
@@ -60,4 +69,4 @@ First version
 = 0.32 =
 Fixed fatal widget-breaking bug
 = 0.4 =
-AJAX check to see if the slug matches the content
+This version has automatic slug checking
