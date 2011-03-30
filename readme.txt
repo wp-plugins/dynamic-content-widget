@@ -16,7 +16,7 @@ Very handy for things like:
 
 *	Pinning content (pages and posts) to the homepage. 
 *	Rendering arbitrary content (pages and posts) in a sidebar or other widget area.
-*	Define Wordpress widget areas, write subtemplates with your own HTML, render content any way you want.
+*	Define Wordpress widget areas with sidebars, write subtemplates with your own HTML, render content any way you want.
 *	Many more uses.
 
 Very simple, but also very powerful and versatile. Also may be difficult to use for people who are not into template 
