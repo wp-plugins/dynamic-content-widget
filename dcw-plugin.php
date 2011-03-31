@@ -25,6 +25,6 @@
  * 
  */
 
-require_once("dcw-dynamic-content-widget.php");
+require_once("dcw-dynamic-content-widget.php"); 
 
 ?>

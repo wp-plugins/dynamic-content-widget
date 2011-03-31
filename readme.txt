@@ -8,7 +8,7 @@ Stable tag: 0.4.2
 
 A Swiss Army Knife for Wordpress developers. Enter a slug or id, select a template you created, and it will render the content with your template.
 
-== Description ==
+== Description == 
 
 A Swiss Army Knife for Wordpress developers. With this WordPress widget, you can enter a slug or id, select a 
 template you created, and the widget will render the content, in a local loop, according to your selected template. 
