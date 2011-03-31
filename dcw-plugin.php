@@ -7,7 +7,7 @@
  * Author: Dikhoff Software
  * Author URI: http://dikhoffsoftware.com
  *
- * Copyright (C) 2011  Dikhoff Software
+ * Copyright (C) 2011  Dikhoff Software 
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
