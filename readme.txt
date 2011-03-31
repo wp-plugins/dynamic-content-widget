@@ -59,7 +59,7 @@ First version
 Fixed content for wordpress.org
 = 0.32 =
 Fixed fatal widget-breaking bug
-= 0.4 =
+= 0.4.2 =
 Added automatic slug checking
 
 == Upgrade Notice ==
@@ -68,5 +68,5 @@ Added automatic slug checking
 First version
 = 0.32 =
 Fixed fatal widget-breaking bug
-= 0.4 =
+= 0.4.2 =
 This version has automatic slug checking
