@@ -31,7 +31,7 @@ Learn how to use this widget by reading these use cases:
 
 Go to [the homepage](http://dikhoffsoftware.com/dynamic-content-widget/ "Dynamic Content Widget homepage") for instructions and screenshots.
 
-== Installation ==
+== Installation == 
 
 1. Upload `dynamic-content-widget.0.4.zip` to the `/wp-content/plugins/` directory and unzip
 1. Activate the plugin through the 'Plugins' menu in WordPress
