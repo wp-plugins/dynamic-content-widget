@@ -88,10 +88,11 @@ function dcw_get_subtemplates() {
 
 function dcw_write_subtemplates($widget, $instance) {
 	$subtemplates = dcw_get_subtemplates();
+	$sid = $widget->get_field_id( 'subtemplate' );
 ?>
 <p>
-<label for="<?php echo $widget->get_field_id( 'subtemplate' ); ?>"><?php _e('Subtemplate:', 'subtemplate'); ?></label>
-	<select id="<?php echo $widget->get_field_id( 'subtemplate' ); ?>" name="<?php echo $widget->get_field_name( 'subtemplate' ); ?>">
+<label for="<?php echo $sid; ?>"><?php _e('Subtemplate:', 'subtemplate'); ?></label>
+	<select id="<?php echo $sid; ?>" name="<?php echo $widget->get_field_name( 'subtemplate' ); ?>">
 		<option value="">None</option>
 <?php 	
 		foreach ( $subtemplates as $file => $desc ) {
@@ -103,7 +104,6 @@ function dcw_write_subtemplates($widget, $instance) {
 		}
 ?> 
 	</select>
-	</strong><a target="_blank" href="http://dikhoffsoftware.com/dynamic-content-widget/#instructions"><b>?</b></a>
 </p>
 <?php
 }

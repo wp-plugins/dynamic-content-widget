@@ -53,7 +53,7 @@ class dcw_Dynamic_Content_Widget extends WP_Widget {
 		$dcw_id = $instance['id'];
 		
 		echo $before_widget;
-
+		
 		if ( $title ) {
 			echo $before_title . $title . $after_title;
 		}
@@ -76,9 +76,14 @@ class dcw_Dynamic_Content_Widget extends WP_Widget {
 		if (!$content->have_posts()) {
 			echo "No content found with id '$dcw_id'.";
 		}
+		
+		if ($dcw_template == '') {
+			echo "Error: No subtemplate selected";
+		}
 
 		while ($content->have_posts()) {
 			$content->the_post();
+			
 			get_template_part($dcw_template);
 		}
 

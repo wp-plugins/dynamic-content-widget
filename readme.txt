@@ -3,12 +3,12 @@ Contributors: DikhoffSoftware
 Donate link: http://unicef.com/
 Tags: widget, dynamic content, homepage, pinning, sticky, sticky a page, pinning a page, sticky pages, pinning pages, dynamic
 Requires at least: 3.0
-Tested up to: 3.1
+Tested up to: 3.1.1
 Stable tag: 0.4.2
 
 A Swiss Army Knife for Wordpress developers. Enter a slug or id, select a template you created, and it will render the content with your template.
 
-== Description == 
+== Description ==
 
 A Swiss Army Knife for Wordpress developers. With this WordPress widget, you can enter a slug or id, select a 
 template you created, and the widget will render the content, in a local loop, according to your selected template. 
@@ -22,7 +22,11 @@ Very handy for things like:
 Very simple, but also very powerful and versatile. Also may be difficult to use for people who are not into template 
 hacking, so if you're not used to php or html, this widget probably isn't for you.
 
-Version 0.4 comes with automatic slug checking. Enter a slug, and the widget will check if the slug is valid.
+== Upcoming changes ==
+*	Create example and pro subtemplates from the widget.
+*	Subtemplate editor to modify templates on the fly.
+
+Version 0.5 is confirmed compatible with Wordpress 3.1.1.
 
 Learn how to use this widget by reading these use cases:
 
@@ -59,8 +63,10 @@ First version
 Fixed content for wordpress.org
 = 0.32 =
 Fixed fatal widget-breaking bug
-= 0.4.2 =
+= 0.4 =
 Added automatic slug checking
+= 0.5 =
+Checked for compatibility and minor addition
 
 == Upgrade Notice ==
 
@@ -68,5 +74,5 @@ Added automatic slug checking
 First version
 = 0.32 =
 Fixed fatal widget-breaking bug
-= 0.4.2 =
+= 0.4 =
 This version has automatic slug checking
